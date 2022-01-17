@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>42616-X3D</title>
+    <script type='text/javascript' src='lib/x3dom/x3dom-full.js'>
+    </script>
+    <link rel='stylesheet' type='text/css' href='lib/x3dom/x3dom.css' />
+    <style type = "text/css">
+        </style>
+</head>
+<body>
+    <h1>Trabalho de 42616 - X3D</a></h1>
+    <x3d width="1012px" height="612px">
+        <scene>
+            <PointLight id='point' on='TRUE' intensity='0.9000' color='1.0 1.0 0.0' location='20 40 20 ' radius='100.0000' shadowIntensity="0.5" >  </PointLight> 
+            <viewpoint position="-10 45 -130" orientation="-0.01451 0.99989 0.00319 3.15833"></viewpoint>
+
+            <transform DEF="cacto">
+                <transform translation="0 6.06 0">
+                    <transform translation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="media/cactus.jpg"></ImageTexture>
+                            </appearance>
+                            <cylinder radius = 1.57 , height = 17 ></cylinder>
+                        </shape>
+                    </transform>
+
+                    <transform rotation = "0 0 1 1.7", translation = "3 2 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="media/cactus.jpg"></ImageTexture>
+                            </appearance>
+                            <cylinder radius = 1 , height = 5></cylinder>
+                        </shape>
+                    </transform>
+
+                    <transform translation = "5.3 4.5 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="media/cactus.jpg"></ImageTexture>
+                            </appearance>
+                            <cylinder radius = 1 , height = 5></cylinder>
+                        </shape>
+                    </transform>
+
+                    <transform translation = "5.3 2.32 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="media/cactus.jpg"></ImageTexture>
+                            </appearance>
+                            <sphere radius = 1.04></sphere>
+                        </shape>
+                    </transform>
+
+                    <transform translation = "5.3 7 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="media/cactus.jpg"></ImageTexture>
+                            </appearance>
+                            <sphere radius = 1></sphere>
+                        </shape>
+                    </transform>
+
+                    <transform translation = "0 8.5 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="media/cactus.jpg"></ImageTexture>
+                            </appearance>
+                            <sphere radius = 1.57></sphere>
+                        </shape>
+                    </transform>
+
+                    <transform rotation = "0 0 1 0.8", translation = "-2 -2.96 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="media/cactus.jpg"></ImageTexture>
+                            </appearance>
+                            <cylinder radius = 1 , height = 5></cylinder>
+                        </shape>
+                    </transform>
+
+                    <transform translation = "-3.61 1.8 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="media/cactus.jpg"></ImageTexture>
+                            </appearance>
+                            <cylinder radius = 1 , height = 6.5></cylinder>
+                        </shape>
+                    </transform>
+
+                    <transform translation = "-3.61 -1.45 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="media/cactus.jpg"></ImageTexture>
+                            </appearance>
+                            <sphere radius = 1></sphere>
+                        </shape>
+                    </transform>
+
+                    <transform translation = "-3.61 5 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="media/cactus.jpg"></ImageTexture>
+                            </appearance>
+                            <sphere radius = 1></sphere>
+                        </shape>
+                    </transform>
+                </transform>
+            </transform>
+
+            <transform translation="0 95 0">    
+                <Transform translation="300 -9.5 0">
+                    <Shape>
+                        <Appearance>
+                            <ImageTexture url="media/desert.jpg"></ImageTexture>
+                        </Appearance>
+                        <Box size='1 200 600'/>
+                    </Shape>
+                </Transform>
+
+                <Transform translation="0 -9.5 300">
+                    <Shape>
+                        <Appearance>
+                            <ImageTexture url="media/desert.jpg"></ImageTexture>
+                        </Appearance>
+                        <Box size='600 200 1'/>
+                    </Shape>
+                </Transform>
+
+                <Transform translation="0 -9.5 -300">
+                    <Shape>
+                        <Appearance>
+                            <ImageTexture url="media/desert.jpg"></ImageTexture>
+                        </Appearance>
+                        <Box size='600 200 1'/>
+                    </Shape>
+                </Transform>
+                </Transform>
+
+                <Transform translation="-300 85 0">
+                    <Shape>
+                        <Appearance>
+                            <ImageTexture url="media/desert.jpg"></ImageTexture>
+                        </Appearance>
+                        <Box size='1 200 600'/>
+                    </Shape>
+                </Transform>
+            </transform>
+
+            <Transform translation="0 -3 0">
+                <Shape>
+                    <Appearance>
+                        <ImageTexture url="media/sand.jpg"></ImageTexture>
+                    </Appearance>
+                    <Box size='600 2 600'/>
+                </Shape>
+            </Transform>
+
+            <Transform translation="0 185 0">
+                <Shape>
+                    <Appearance>
+                        <ImageTexture url="media/sky.jpg"></ImageTexture>
+                    </Appearance>
+                    <Box size='600 2 600'/>
+                </Shape>
+            </Transform>
+
+            <transform DEF="sun">
+                <transform translation = "80 120 80">
+                    <shape>
+                        <appearance>
+                            <ImageTexture url="media/sun.png"></ImageTexture>
+                        </appearance>
+                        <sphere radius = 8></sphere>
+                    </shape>
+                </transform>
+            </transform>
+            
+
+
+            <timeSensor DEF="time" cycleInterval="5" loop="true"> </timeSensor>
+            <PositionInterpolator DEF="move" key="0 0.5 0.6 0.7 0.8 0.9 1" keyValue="0 100 0 0 0 0  0 0 0  0 0 0  0 0 0  0 0 0  0 0 0"> </PositionInterpolator> 
+            <Route fromNode="time" fromField ="fraction_changed" toNode="move" toField="set_fraction"> </Route> 
+            <Route fromNode="move" fromField ="value_changed" toNode="sun" toField="translation"> </Route>
+
+            <timeSensor DEF="time" cycleInterval="5" loop="true"> </timeSensor>
+            <PositionInterpolator DEF="move" key="0 0.5 0.6 0.7 0.8 0.9 1" keyValue="0 -70 0 0 -20 0  0 0 0  0 0 0  0 0 0  0 0 0  0 0 0"> </PositionInterpolator> 
+            <Route fromNode="time" fromField ="fraction_changed" toNode="move" toField="set_fraction"> </Route> 
+            <Route fromNode="move" fromField ="value_changed" toNode="cacto" toField="translation"> </Route>
+
+        </scene>
+    </x3d>
+</body>
+</html>

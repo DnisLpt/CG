@@ -1,0 +1,1 @@
+Por alguma razão desconhecida o ficheiro .html dá o erro de "TypeError: scope.domElement is undefined" quando corrido com o ficheiro "OrbitControls.js" fornecido pelo professor na sua biblioteca do ficheiro .zip transferido do moodle. Entao decidi baixar uma biblioteca to ficheiro de um link do github "https://gist.github.com/mrflix/8351020#file-orbitcontrols-js".
